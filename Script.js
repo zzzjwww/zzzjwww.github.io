@@ -1,7 +1,9 @@
 
+var count = 0;
+function lap() {
+    count ++;
+    // alert(`btm is clicked and and i is ${count}`);
+    document.getElementById("count-el").innerText = count;
+}
 
-let myAge = 28;
-let humanDogRatio = 1/7;
-let myDogAge = myAge * humanDogRatio;
-
-document.getElementById("count-el").innerText = myDogAge;
+document.getElementById("count-el").innerText = 5;
