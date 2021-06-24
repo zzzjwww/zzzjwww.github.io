@@ -1,9 +1,12 @@
-
-var count = 0;
-function lap() {
+let countEl = document.getElementById("count-el");
+let saveEl = document.getElementById("save-el");
+let count = 0;
+let increment = () => {
     count ++;
-    // alert(`btm is clicked and and i is ${count}`);
-    document.getElementById("count-el").innerText = count;
+    countEl.innerText = count;
 }
 
-document.getElementById("count-el").innerText = 5;
+function save(){
+    let oldCount = count + " - ";
+    saveEl.innerText += oldCount;
+}
