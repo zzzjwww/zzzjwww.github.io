@@ -1,0 +1,28 @@
+#item1 {
+    color: aqua;
+}
+
+.bad {
+    color: brown;
+}
+.group {
+    
+    height: 25px;
+    width: 35px;
+}
+.group1 {
+    
+    background-color: chartreuse;
+}
+.group2 {
+   
+    background-color:gold;
+}
+.group3 {
+  
+    background-color: blue;
+}
+.group4 {
+
+    background-color:gray;
+}

@@ -1,12 +1,9 @@
-let countEl = document.getElementById("count-el");
-let saveEl = document.getElementById("save-el");
-let count = 0;
-let increment = () => {
-    count ++;
-    countEl.innerText = count;
-}
+let item1 = document.getElementById("item1");
+// item1.textContent = "Hello?";
+let em1 = document.getElementsByTagName("em");
 
-function save(){
-    let oldCount = count + " - ";
-    saveEl.innerText += oldCount;
+let i = 0;
+while (i<em1.length){
+    em1[i].textContent = "yesyesyes";
+    i++;
 }
