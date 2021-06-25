@@ -1,28 +1,9 @@
-#item1 {
-    color: aqua;
+body {
+    font-family: "Trebuchet MS","Lucida Sans Unicode","sans-serif";
+    background-image: url(../images/macosmontereywallpaper.jpeg);
+    background-size: cover;
+}
+h1 {
+    color:goldenrod;
 }
 
-.bad {
-    color: brown;
-}
-.group {
-    
-    height: 25px;
-    width: 35px;
-}
-.group1 {
-    
-    background-color: chartreuse;
-}
-.group2 {
-   
-    background-color:gold;
-}
-.group3 {
-  
-    background-color: blue;
-}
-.group4 {
-
-    background-color:gray;
-}
