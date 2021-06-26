@@ -2,8 +2,31 @@ body {
     font-family: "Trebuchet MS","Lucida Sans Unicode","sans-serif";
     background-image: url(../images/macosmontereywallpaper.jpeg);
     background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 h1 {
     color:goldenrod;
 }
+#btn {
+    color: white;
+    background-color: #016f32;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+}
 
+.sku {
+    color:teal;
+    background-color: tomato;
+}
+.ski {
+    
+font-size: 50px;
+
+}
+
+.gla {
+    color:tomato;
+}
