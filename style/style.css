@@ -7,26 +7,15 @@ body {
     font-weight: bold;
 }
 h1 {
-    color:goldenrod;
+    color:white;
 }
-#btn {
+button {
     color: white;
-    background-color: #016f32;
+    background-color:rgba(89, 27, 27, 0.3);
     width: 150px;
     border: none;
     border-radius: 3px;
+    margin: 2.5px;
+    padding: 2.5px;
 }
 
-.sku {
-    color:teal;
-    background-color: tomato;
-}
-.ski {
-    
-font-size: 50px;
-
-}
-
-.gla {
-    color:tomato;
-}
