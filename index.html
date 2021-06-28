@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <Title>Practicing</Title>
-        <link rel="stylesheet" href="./style/style.css">
-        
-    </head>
-    <body>
+
+<head>
+    <Title>Practicing</Title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+    <section id="Blackjack">
         <h1>Blackjack</h1>
         <p id="message-el">Want to play a round?</p>
         <p id="cards-el">Cards:</p>
         <p id="sum-el">Sum:</p>
-        <button id="btn" onclick="startGame()">START GAME</button><br>
-        <button id="btn2" onclick="newCard()">DRAW NEW CARD</button>
+        <button id="btn">START GAME</button><br>
+        <button id="btn2">DRAW NEW CARD</button>
         <p id="player-el"></p>
-    </body>
-    <script src="./Script.js"></script>
+        <form id="user-info">
+            <label for="user-name">Player Name:</label>
+            <input type="text" id="user-name">
+            <button type="submit" id="btn3" value="send">Submit</button>
+        </form>
+    </section>
+    <section id="plug-in">
+        <input type="text" id="input-el">
+        <button id="input-btn">SAVE INPUT</button>
+        <ul id="ul-l"></ul>
+    </section>
+</body>
+<script src="./Script.js"></script>
+<script src="practice.js"></script>
 </html>

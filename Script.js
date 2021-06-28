@@ -1,9 +1,3 @@
-let player = {
-    
-    chips : "200"
-}
-let playerName = window.prompt("Welcome! Type your Alias","Player1");
-player.name = playerName;
 let cards = [];
 let sum = 0;
 let hasBlackjack = false;
@@ -12,10 +6,15 @@ let message = "";
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.getElementById("cards-el");
 let playEl = document.querySelector("#player-el");
-
-
+let start = document.querySelector("#btn");
+let drawnNewCard = document.querySelector("#btn2");
+const player = {
+    chips : 200
+}
+let playerName = document.getElementById("user-name").value;
+player.name = playerName;
 playEl.textContent = player.name + ": $" + player.chips;
-
+console.log(player.name);
 function getRandomCard() {
     numx = Math.floor(Math.random()*13) + 1;
     if(numx===1) {
@@ -46,13 +45,16 @@ let renderGame = () => {
     if (sum <=20){
         message = "Do you want to draw a card?💁🏻"
     }else if (sum === 21){
-        message = "Wohoo! You've got Blackjack!🥳"    
+        message = "Wohoo! You've got Blackjack!🥳 and won $20."   
+        player.chips += 20; 
     }else{
-        message = "You're out of the game!😇"
-        isAlive =false;    
+        message = "You're out of the game!😇 and lost $20."
+        isAlive =false;
+        player.chips -= 20;    
     }
     sumEl.textContent = "Sum: " + sum;
     document.getElementById("message-el").textContent = message;
+    playEl.textContent = player.name + ": $" + player.chips;
 }
 
 let newCard = () => {
@@ -64,24 +66,7 @@ let newCard = () => {
 }
 }
 
-
-// let listItem2 = document.getElementById("list2");
-// let list = document.getElementsByTagName("ul")[0];
-// let newItemLast = document.createElement("li");
-// let newTextLast = document.createTextNode("Hahaha, I am new!🤓");
-// newItemLast.appendChild(newTextLast);
-// console.log(newItemLast);
-// list.insertBefore(newItemLast,listItem2);
-
-// let listItems = document.querySelectorAll("li");
+start.onclick = startGame;
+drawnNewCard.onclick = newCard;
 
 
-// let clickIt = () => {
-// for (let i = 0;i<listItems.length;i++) {
-//     if (listItems[i].hasAttribute("class")){
-//     listItems[i].className = "gla";
-//     }else {
-//         listItems[i].setAttribute("class","gla");
-//     }  
-// }
-// }

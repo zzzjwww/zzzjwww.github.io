@@ -5,16 +5,29 @@ body {
     text-align: center;
     color: white;
     font-weight: bold;
+    font-size: x-large;
+    margin: 0px;
+}
+#Blackjack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(165, 36, 85, 0.3);
+    margin: 0px;
+    padding: 20px;
+
 }
 h1 {
     color:white;
 }
 button {
+    font-size: large;
     color: white;
-    background-color:rgba(89, 27, 27, 0.3);
+    background-color:rgba(89, 27, 27, 0.5);
     width: 150px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     margin: 2.5px;
     padding: 2.5px;
 }
