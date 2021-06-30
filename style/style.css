@@ -1,12 +1,13 @@
 body {
     font-family: "Trebuchet MS","Lucida Sans Unicode","sans-serif";
-    background-image: url(../images/macosmontereywallpaper.jpeg);
+    /* background-image: url(../images/macosmontereywallpaper.jpeg); */
     background-size: cover;
     text-align: center;
     color: white;
     font-weight: bold;
     font-size: x-large;
     margin: 0px;
+    min-width: 400px;
 }
 #Blackjack {
     display: flex;
@@ -32,3 +33,24 @@ button {
     padding: 2.5px;
 }
 
+#delete-btn {
+    background-color:rgba(9, 27, 27, 0.4);
+    background: white;
+}
+ul {
+    list-style: none;
+
+}
+ul li{
+    margin-top: 5px;
+}
+ul li a {
+    color: white;
+    margin-top: 5px;
+}
+
+#plug-in {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(27, 89, 85, 0.5);
+}

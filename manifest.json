@@ -1,0 +1,12 @@
+{
+    "manifest_version" : 3,
+    "version" : "1",
+    "name" : "Black Jack",
+    "action" : {
+        "default_popup": "index.html",
+        "default_icon": "icon1.png"
+    },
+    "permissions" : [
+        "tabs"
+    ]
+}
