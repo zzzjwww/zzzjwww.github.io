@@ -8,16 +8,12 @@ let cardsEl = document.getElementById("cards-el");
 let playEl = document.querySelector("#player-el");
 let start = document.querySelector("#btn");
 let drawnNewCard = document.querySelector("#btn2");
-let playerName = document.getElementById("user-name");
+let playerName = document.querySelector("#user-name");
 const player = {
     chips : 200
 }
 
-player.name = playerName.value;
-console.log(player);
 
-playEl.textContent = player.name + ": $" + player.chips;
-console.log(player.name);
 function getRandomCard() {
     numx = Math.floor(Math.random()*13) + 1;
     if(numx===1) {
@@ -46,18 +42,18 @@ let renderGame = () => {
         cardsEl.textContent += cards[i] + " ";
     }
     if (sum <=20){
-        message = "Do you want to draw a card?"
+        message = "Do you want to draw a card?🃏"
     }else if (sum === 21){
-        message = "Wohoo! You've got Blackjack! and won $20."   
+        message = "Wohoo! You've got Blackjack! and won $20.🥳"   
         player.chips += 20; 
     }else{
-        message = "You're out of the game! and lost $20."
+        message = "You're out of the game! and lost $20.🙀"
         isAlive =false;
         player.chips -= 20;    
     }
     sumEl.textContent = "Sum: " + sum;
     document.getElementById("message-el").textContent = message;
-    playEl.textContent = player.name + ": $" + player.chips;
+
 }
 
 let newCard = () => {
